@@ -1,38 +1,38 @@
-import { createContext, Suspense, useEffect, useState } from 'react'
-import MasterLayout from './layout/MasterLayout'
-import { BrowserRouter as Router, Route, Routes } from 'react-router-dom'
-import { ToastContainer } from 'react-toastify'
+import { createContext, Suspense, useEffect, useState } from "react";
+import MasterLayout from "./layout/MasterLayout";
+import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
+import { ToastContainer } from "react-toastify";
 
-import 'react-toastify/dist/ReactToastify.css'
-import Dashboard from 'pages/Dashboard'
-import NotFoundPage from 'pages/NotFoundPage'
+import "react-toastify/dist/ReactToastify.css";
+import Dashboard from "pages/Dashboard";
+import NotFoundPage from "pages/NotFoundPage";
 
 import {
   DEFAULT_THEME,
   MantineProvider,
   mergeMantineTheme,
-} from '@mantine/core'
-import themeOverride from './theme/theme'
-import { DASHBOARD_ROUTES } from './routes/Routes'
+} from "@mantine/core";
+import themeOverride from "./theme/theme";
+import { DASHBOARD_ROUTES } from "./routes/Routes";
 
-export const themeContext = createContext('theme')
+export const themeContext = createContext("green");
 
 function App() {
   const [themeColor, setThemeColor] = useState(
-    localStorage.getItem('themeColor') ?? 'theme'
-  )
+    localStorage.getItem("themeColor") ?? "green"
+  );
   const [shapes, setShapes] = useState(
-    localStorage.getItem('shape') ?? 'Earth Lines Sphere'
-  )
+    localStorage.getItem("shape") ?? "Solid Color"
+  );
   // Sync theme color with local storage
   useEffect(() => {
-    localStorage.setItem('themeColor', themeColor)
-  }, [themeColor])
+    localStorage.setItem("themeColor", themeColor);
+  }, [themeColor]);
 
   // Sync theme color with local storage
   useEffect(() => {
-    localStorage.setItem('shape', shapes)
-  }, [shapes])
+    localStorage.setItem("shape", shapes);
+  }, [shapes]);
 
   // Modify the theme based on selected themeColor
   const themeAsperSelected = {
@@ -40,9 +40,9 @@ function App() {
     colors: {
       theme: themeOverride.colors[themeColor],
     },
-  }
+  };
 
-  const theme = mergeMantineTheme(DEFAULT_THEME, themeAsperSelected)
+  const theme = mergeMantineTheme(DEFAULT_THEME, themeAsperSelected);
 
   return (
     <themeContext.Provider
@@ -61,7 +61,7 @@ function App() {
             <Route
               path="/"
               element={
-                <Suspense fallback={''}>
+                <Suspense fallback={""}>
                   <MasterLayout />
                 </Suspense>
               }
@@ -78,7 +78,7 @@ function App() {
             <Route
               path="*"
               element={
-                <Suspense fallback={''}>
+                <Suspense fallback={""}>
                   <NotFoundPage />
                 </Suspense>
               }
@@ -87,7 +87,7 @@ function App() {
         </Router>
       </MantineProvider>
     </themeContext.Provider>
-  )
+  );
 }
 
-export default App
+export default App;

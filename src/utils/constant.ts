@@ -11,7 +11,7 @@ export const navigationItems = [
   { href: "#contact", label: "Contact" },
 ];
 
-export const NAME = "Kishan Vasani";
+export const NAME = "Gopal Vasani";
 export const DESCRIPTION = `I am a skilled full-stack developer with expertise in front-end and back-end technologies, passionate about innovation and problem-solving. I thrive in collaborative environments, valuing teamwork and effective communication to deliver successful projects.`;
 export const SOCIAL_MEDIA_LINK = {
   LINKEDIN: "https://www.linkedin.com/in/kishan-vasani-3083961a5/",

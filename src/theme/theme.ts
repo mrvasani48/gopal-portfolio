@@ -112,7 +112,7 @@ const themeOverride = createTheme({
       "#b30056",
     ],
   },
-  primaryColor: "theme",
+  primaryColor: "green",
   primaryShade: 6,
   cursorType: "pointer",
   // Customizing the appearance of certain elements
