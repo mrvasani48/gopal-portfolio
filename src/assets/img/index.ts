@@ -14,7 +14,7 @@ import ems from "./ems.jpg";
 import cms from "./cms.jpg";
 import jobs from "./jobs.jpg";
 import bay from "./bay.jpg";
-import one5 from "./lat.png";
+import one5 from "./let2.png";
 import profile1 from "./profile1.png";
 
 export const images: any = {
