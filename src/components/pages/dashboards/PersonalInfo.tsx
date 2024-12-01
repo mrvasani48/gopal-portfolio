@@ -67,10 +67,10 @@ const PersonalInfo = () => {
                 <Icon icon="fluent:window-dev-tools-20-regular" />
               </p>
               <p className="text-4xl bg-dark-secondary text-[var(--mantine-color-theme-7)]   p-2 rounded-md  hover:shadow-md hover:shadow-dark-500">
-                <Icon icon="fluent:code-js-16-regular" />
+                <Icon icon="arcticons:shopify" />
               </p>
               <p className="text-4xl bg-dark-secondary text-[var(--mantine-color-theme-7)]   p-2 rounded-md  hover:shadow-md hover:shadow-dark-500">
-                <Icon icon="mdi:react" />
+                <Icon icon="bxl:magento" />
               </p>
             </div>
           </div>
