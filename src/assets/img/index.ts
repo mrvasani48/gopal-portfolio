@@ -14,8 +14,8 @@ import ems from "./ems.jpg";
 import cms from "./cms.jpg";
 import jobs from "./jobs.jpg";
 import bay from "./bay.jpg";
-import one5 from "./one5.png";
-import porfile_logo from './profile_logo.jpg'
+import one5 from "./lat.png";
+import profile1 from "./profile1.png";
 
 export const images: any = {
   profile: profile,
@@ -35,5 +35,6 @@ export const images: any = {
   jobs: jobs,
   bay: bay,
   one5: one5,
-  porfile_logo:porfile_logo
+  porfile_logo: one5,
+  profile1: profile1,
 };

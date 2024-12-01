@@ -87,7 +87,7 @@ export const PROFESSIONAL_SKILLS = {
     { name: "ON Page SEO", percentage: 80 },
     { name: "Off Page SEO", percentage: 80 },
     { name: "Google Ads", percentage: 70 },
-    { name: "Meta Ads", percentage: 70 }
+    { name: "Meta Ads", percentage: 70 },
   ],
 
   toolsAndLibraries: [
@@ -155,7 +155,7 @@ export const experienceData = [
     category: "Work Experience",
     items: [
       {
-        year: "June 2021 - August 2024",
+        year: "June 2021 - Present",
         title: "Shopify App Developer",
         company: "Capacity Web Solutions PVT. LTD.",
         location: "Ahmedabad, Gujarat (IN)(WFH)",
@@ -163,11 +163,6 @@ export const experienceData = [
         details:
           "Developed and maintained custom Shopify apps using REST and GraphQL APIs, Polaris UI, and Theme App Extensions. Specialized in creating scalable, user-friendly solutions, integrating third-party APIs, and enhancing eCommerce store functionality to drive business growth.",
       },
-    ],
-  },
-  {
-    category: "Work Experience",
-    items: [
       {
         year: "June 2020 - June 2021",
         title: "Mageno Mudule Developer",
@@ -179,6 +174,20 @@ export const experienceData = [
       },
     ],
   },
+  // {
+  //   category: "Work Experience",
+  //   items: [
+  //     {
+  //       year: "June 2020 - June 2021",
+  //       title: "Mageno Mudule Developer",
+  //       company: "Capacity Web Solutions PVT. LTD.",
+  //       location: "Ahmedabad, Gujarat (IN)(WFH)",
+  //       role: "",
+  //       details:
+  //         "Designed and developed custom Magento 2 modules to enhance store functionality, optimize performance, and integrate with third-party systems. Specialized in creating tailored solutions for eCommerce platforms, ensuring seamless user experiences and efficient back-end processes.",
+  //     },
+  //   ],
+  // },
   {
     category: "Internship Experience",
     items: [
@@ -200,8 +209,7 @@ export const contactData = {
   pageDescription: "Contact With Me",
   name: "Gopal Vasani",
   role: "Shopify App Developer & SEO Executive",
-  description:
-    "Connect with me via WhatsApp or email.",
+  description: "Connect with me via WhatsApp or email.",
   phone: "+91 8141918957",
   email: "vasanigopal12@gmail.com",
   socialLinks: {
@@ -211,7 +219,7 @@ export const contactData = {
   },
 };
 
-/* export const TESTIMONIALS = {
+export const TESTIMONIALS = {
   title: "Testimonials",
   description: "What clients say",
   testimonial_content: [
@@ -238,9 +246,8 @@ export const contactData = {
         "During his trainee period, Kishan displayed strong foundational knowledge and eagerness to learn. His contributions to front-end development were significant and helped streamline our web applications.",
     },
   ],
-}; */
-
-/* export const BLOG_DATA = {
+};
+export const BLOG_DATA = {
   title: "My Blog",
   description: "Visit my blog and keep your feedback",
   blogContent: [
@@ -317,12 +324,11 @@ export const contactData = {
       ],
     },
   ],
-}; */
+};
 
 export const PORTFOLIO_DATA = {
   title: "My Portfolio",
-  description:
-    "Explore my diverse projects and feel free to provide feedback.",
+  description: "Explore my diverse projects and feel free to provide feedback.",
   portfolio_content: [
     {
       id: 1,
@@ -412,7 +418,7 @@ export const PORTFOLIO_DATA = {
         "Monitor attachment downloads for data-driven insights.",
         "Choose from 7 pre-designed icons or upload custom icons for attachments.",
         "Assign attachments to individual or multiple products, categories, CMS pages, and generic pages.",
-        "Showcase attachments on order view pages and in emails for customer convenience."
+        "Showcase attachments on order view pages and in emails for customer convenience.",
       ],
     },
   ],

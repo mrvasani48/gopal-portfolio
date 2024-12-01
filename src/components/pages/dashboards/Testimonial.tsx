@@ -28,7 +28,7 @@ const Testimonial = () => {
                 <div className="col-span-12 md:col-span-4 group p-10 rounded-3xl shadow-2xl shadow-dark-500 m-8 ">
                   <div className="overflow-hidden rounded-xl ">
                     <img
-                      src={images[item.image]}
+                      src={item.image}
                       alt={`${item.name}'s testimonial`}
                       className="rounded-xl group-hover:scale-125 "
                     />
