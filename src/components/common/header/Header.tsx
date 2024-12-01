@@ -151,7 +151,7 @@ const Header = () => {
           <p className="uppercase">find with me</p>
           <div className="flex gap-10 mt-4">
             <a
-              href="https://www.linkedin.com/in/kishan-vasani-3083961a5"
+              href="https://www.linkedin.com/in/gopal-vasani"
               target="_blank"
               rel="noreferrer"
               className="text-4xl text-[var(--mantine-color-theme-7)] bg-dark-secondary p-2 rounded-md  before:bottom-0  before:-z-10 before:rounded-md hover:shadow-md hover:shadow-dark-500"
