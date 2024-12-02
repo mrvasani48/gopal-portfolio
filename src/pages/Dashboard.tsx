@@ -85,7 +85,7 @@ const Dashboard = () => {
         </motion.div>
       </Suspense>
 
-      <Suspense fallback="">
+      {/* <Suspense fallback="">
         <motion.div
           variants={slideInFromRight}
           initial="hidden"
@@ -93,7 +93,7 @@ const Dashboard = () => {
         >
           <Clients />
         </motion.div>
-      </Suspense>
+      </Suspense> */}
 
       <Suspense fallback="">
         <motion.div
@@ -105,7 +105,7 @@ const Dashboard = () => {
         </motion.div>
       </Suspense>
 
-      <Suspense fallback="">
+      {/* <Suspense fallback="">
         <motion.div
           variants={slideInFromRight}
           initial="hidden"
@@ -113,7 +113,7 @@ const Dashboard = () => {
         >
           <Blog />
         </motion.div>
-      </Suspense>
+      </Suspense> */}
 
       <Suspense fallback="">
         <motion.div
