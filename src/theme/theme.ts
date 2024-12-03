@@ -1,4 +1,12 @@
-import { createTheme, Textarea, TextInput, Button, Input } from "@mantine/core";
+import {
+  createTheme,
+  Textarea,
+  TextInput,
+  Button,
+  Input,
+  Tooltip,
+  px,
+} from "@mantine/core";
 
 const themeOverride = createTheme({
   colorScheme: "dark",
@@ -176,6 +184,14 @@ const themeOverride = createTheme({
         input: {
           fontSize: "small",
           width: "100%",
+        },
+      },
+    }),
+    Tooltip: Tooltip.extend({
+      styles: {
+        tooltip: {
+          padding: px(5),
+          borderRadius: px(5),
         },
       },
     }),

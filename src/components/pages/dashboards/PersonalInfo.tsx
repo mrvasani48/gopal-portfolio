@@ -2,6 +2,7 @@ import { images } from "assets/img";
 import { Icon } from "@iconify/react";
 import Typewriter from "typewriter-effect";
 import { DESCRIPTION, NAME, SOCIAL_MEDIA_LINK } from "utils/constant";
+import { Tooltip } from "@mantine/core";
 
 const PersonalInfo = () => {
   return (
@@ -34,44 +35,63 @@ const PersonalInfo = () => {
           <div>
             <p className="uppercase">find with me</p>
             <div className="flex gap-10 mt-4">
-              <a
-                href={SOCIAL_MEDIA_LINK.LINKEDIN}
-                target="_blank"
-                rel="noreferrer"
-                className="text-4xl bg-dark-secondary text-[var(--mantine-color-theme-7)] p-2 rounded-md  before:bottom-0  before:-z-10 before:rounded-md hover:shadow-md hover:shadow-dark-500"
-              >
-                <Icon icon="ri:linkedin-line" />
-              </a>
-              <a
-                href={SOCIAL_MEDIA_LINK.TWITTER}
-                target="_blank"
-                rel="noreferrer"
-                className="text-4xl bg-dark-secondary text-[var(--mantine-color-theme-7)] p-2 rounded-md  hover:shadow-md hover:shadow-dark-500"
-              >
-                <Icon icon="icon-park-outline:twitter" />
-              </a>
-              <a
-                href={SOCIAL_MEDIA_LINK.INSTAGRAM}
-                target="_blank"
-                rel="noreferrer"
-                className="text-4xl bg-dark-secondary text-[var(--mantine-color-theme-7)] p-2 rounded-md  hover:shadow-md hover:shadow-dark-500"
-              >
-                <Icon icon="bxl:instagram" />
-              </a>
+              <Tooltip label="Linkedin" color="var(--mantine-color-theme-7)">
+                <a
+                  href={SOCIAL_MEDIA_LINK.LINKEDIN}
+                  target="_blank"
+                  rel="noreferrer"
+                  className="text-4xl bg-dark-secondary text-[var(--mantine-color-theme-7)] p-2 rounded-md  before:bottom-0  before:-z-10 before:rounded-md hover:shadow-md hover:shadow-dark-500"
+                >
+                  <Icon icon="ri:linkedin-line" />
+                </a>
+              </Tooltip>
+
+              <Tooltip label="Twitter" color="var(--mantine-color-theme-7)">
+                <a
+                  href={SOCIAL_MEDIA_LINK.TWITTER}
+                  target="_blank"
+                  rel="noreferrer"
+                  className="text-4xl bg-dark-secondary text-[var(--mantine-color-theme-7)] p-2 rounded-md  hover:shadow-md hover:shadow-dark-500"
+                >
+                  <Icon icon="icon-park-outline:twitter" />
+                </a>
+              </Tooltip>
+
+              <Tooltip label="Instagram" color="var(--mantine-color-theme-7)">
+                <a
+                  href={SOCIAL_MEDIA_LINK.INSTAGRAM}
+                  target="_blank"
+                  rel="noreferrer"
+                  className="text-4xl bg-dark-secondary text-[var(--mantine-color-theme-7)] p-2 rounded-md  hover:shadow-md hover:shadow-dark-500"
+                >
+                  <Icon icon="bxl:instagram" />
+                </a>
+              </Tooltip>
             </div>
           </div>
           <div>
             <p className="uppercase">best skill on</p>
             <div className="flex gap-10 mt-4">
-              <p className="text-4xl bg-dark-secondary text-[var(--mantine-color-theme-7)]  p-2 rounded-md  hover:shadow-md hover:shadow-dark-500">
-                <Icon icon="fluent:window-dev-tools-20-regular" />
-              </p>
-              <p className="text-4xl bg-dark-secondary text-[var(--mantine-color-theme-7)]   p-2 rounded-md  hover:shadow-md hover:shadow-dark-500">
-                <Icon icon="arcticons:shopify" />
-              </p>
-              <p className="text-4xl bg-dark-secondary text-[var(--mantine-color-theme-7)]   p-2 rounded-md  hover:shadow-md hover:shadow-dark-500">
-                <Icon icon="bxl:magento" />
-              </p>
+              <Tooltip
+                label="Web app development"
+                color="var(--mantine-color-theme-7)"
+              >
+                <p className="text-4xl bg-dark-secondary text-[var(--mantine-color-theme-7)]  p-2 rounded-md  hover:shadow-md hover:shadow-dark-500">
+                  <Icon icon="fluent:window-dev-tools-20-regular" />
+                </p>
+              </Tooltip>
+
+              <Tooltip label="Shopify" color="var(--mantine-color-theme-7)">
+                <p className="text-4xl bg-dark-secondary text-[var(--mantine-color-theme-7)]   p-2 rounded-md  hover:shadow-md hover:shadow-dark-500">
+                  <Icon icon="arcticons:shopify" />
+                </p>
+              </Tooltip>
+
+              <Tooltip label="Magento" color="var(--mantine-color-theme-7)">
+                <p className="text-4xl bg-dark-secondary text-[var(--mantine-color-theme-7)]   p-2 rounded-md  hover:shadow-md hover:shadow-dark-500">
+                  <Icon icon="bxl:magento" />
+                </p>
+              </Tooltip>
             </div>
           </div>
         </div>
