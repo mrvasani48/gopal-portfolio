@@ -6,7 +6,7 @@ const PremiumPlan = lazy(() => import("./tabs/PremiumPlan"));
 
 const PriceModal = () => {
   return (
-    <div id="price" className="grid grid-cols-12 w-full ">
+    <div id="price" className="grid grid-cols-12 w-full mt-20 ">
       <div className="col-span-12 md:col-span-5">
         <p className=" text-center my-5 uppercase text-[var(--mantine-color-theme-7)]">
           Pricing
@@ -46,7 +46,7 @@ const PriceModal = () => {
           </Tabs.Panel>
         </Tabs>
       </div>
-      <p className=" col-span-12 mt-20 mb-5 border border-dark-600 features"></p>
+      <p className="col-span-12 mt-20 mb-5 border border-dark-600 features"></p>
     </div>
   );
 };

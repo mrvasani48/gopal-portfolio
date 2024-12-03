@@ -72,6 +72,7 @@ const Testimonial = () => {
           ))}
         </Carousel>
       </div>
+      <p className="col-span-12 mt-20 mb-5 border border-dark-600 features"></p>
     </div>
   );
 };
